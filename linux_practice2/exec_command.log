@@ -1,0 +1,111 @@
+    1  exit
+    2  sudo yum -y groupinstall "development tools"
+    3  sudo yum -y install epel-release wget
+    4  udo wget http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
+    5  sudo wget http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
+    6  sudo rpm -Uvh remi-release-7.rpm
+    7  sudo yum -y install --enablerepo=remi-php71 php php-pdo php-mysqlnd php-mbstring php-xml php-fpm php-common php-devel php-mysql unzip
+    8  php -v
+    9  php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+   10  php composer-setup.php
+   11  sudo mv composer.phar /usr/local/bin/composer
+   12  comoposer -v
+   13  composer -v
+   14  ls
+   15  ls /
+   16  ls /usr
+   17  pwd
+   18  cd /vagrant
+   19  mkdir server_lesson && cd server_lesson
+   20  ls -la
+   21  git log
+   22  git init
+   23  ls -la
+   24  touch first.txt
+   25  cd /vagrant
+   26  mkdir server_lesson/linux_practice/public
+   27  mkdir -p server_lesson/linux_practice/public
+   28  ls server_lesson server_lesson/linux_practice
+   29  cd /vagrant
+   30  touch server_lesson/linux_practice/public/index.php
+   31  ls server_lesson/linux_practice/public
+   32  cd /vagrant/server_lesson && ls
+   33  cd /vagrant/server_lesson/linux_practice/public
+   34  cp index.php index_bk.php
+   35  ls
+   36  d /vagrant/server_lesson/linux_practice
+   37  cd /vagrant/server_lesson/linux_practice
+   38  cp -r public tmp
+   39  ls ./public tmp
+   40  cd /vagrant
+   41  mv server_lesson/linux_practice server_lesson/linux_practice1
+   42  mkdir linux_practice2 linux_practice3
+   43  mv ./linux_practice2 ./server_lesson
+   44  cd /vagrant/server_lesson/linux_practice1/tmp/
+   45  rm *_bk.php
+   46  cd /vagrant
+   47  rm server_lesson/first.txt
+   48  rm -r linux_practice3
+   49  ls server_lesson
+   50  cd /vagrant/server_lesson
+   51  echo '# サーバレッスン' > README.md
+   52  echo 'Linuxプラクティス' >> README.md
+   53  echo '-----------------' >> README.md
+   54  cat README.md
+   55  vi README.md
+   56  ls
+   57  cd linux_practice1
+   58  cd ..
+   59  ls linux_practice1
+   60  ls linux_practice1/public
+   61  ls linux_practice1/tmp
+   62  ls -la
+   63  git status
+   64  git add .
+   65  git status
+   66  git commit -m 'first commit'
+   67  git log
+   68  git remote add origin https://github.com/iPyone54/server_lesson.git
+   69  git push -u origin master
+   70  git status
+   71  vi README.md 
+   72  git status
+   73  git diff
+   74  git add README.md
+   75  git status
+   76  git commit -m 'リスト表示に変更'
+   77  git log --oneline
+   78  git push
+   79  git status
+   80  mkdir ./linux_practice2/documents
+   81  touch ./linux_practice2/documents/gizumo{01..50}.md
+   82  touch ./linux_practice2/documents
+   83  rm ./linux_practice2/documents
+   84  ls linux_practice2
+   85  ls -a linux_practice2
+   86  ls ./linux_practice2/documents
+   87  mkdir ./linux_practice2/trash
+   88  ls ./linux_practice2
+   89  mv ./linux_practice2/documents/gizumo{20..40}.md ./linux_practice2/trash
+   90  ls ./linux_practice2/trash
+   91  touch ./linux_practice2/.gitignore
+   92  ls -a ./linux_practice2
+   93  vi .gitignore
+   94  vi ./linux_practice2/.gitignore
+   95  git status
+   96  touch ./linux_practice2/exec_command.log
+   97  ls ./linux_practice2
+   98  history -300 > ./linux_practice2/exec_command.log 
+   99  echo history -300 > ./linux_practice2/exec_command.log 
+  100  ./linux_practice2/exec_command.log
+  101  ls ./linux_practice2/exec_command.log
+  102  cat ./linux_practice2/exec_command.log
+  103  history -300
+  104  history
+  105  history -300
+  106  history -30
+  107  history -3
+  108  history
+  109  history 300
+  110  history 3
+  111   history 300 > ./linux_practice2/exec_command.log 
