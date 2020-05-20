@@ -1,14 +1,14 @@
 # サーバレッスン
 Linuxプラクティス
 -----------------
-ls
-pwd
-mkdir
-touch
-cp
-mv
-rm
->
->>
-cat
+- ls
+- pwd
+- mkdir
+- touch
+- cp
+- mv
+- rm
+- >
+- >>
+- cat
 
